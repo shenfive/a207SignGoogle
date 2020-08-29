@@ -23,16 +23,43 @@
                                     <constraint firstAttribute="width" constant="241" id="rUf-nv-Tz3"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hzb-KJ-Fqg">
+                                <rect key="frame" x="162" y="278" width="90" height="44"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="CjD-gc-29W"/>
+                                    <constraint firstAttribute="height" constant="44" id="M4h-9d-PJE"/>
+                                </constraints>
+                                <state key="normal" title="sign out"/>
+                                <connections>
+                                    <action selector="signOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HJr-V3-JoW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未登入" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lM-LR-NfI">
+                                <rect key="frame" x="181" y="402" width="52" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ISD-LT-gxU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Hzb-KJ-Fqg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DE0-aB-fQe"/>
                             <constraint firstItem="cQE-Ai-2MN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Jxe-4Z-xxD"/>
                             <constraint firstItem="cQE-Ai-2MN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QnI-91-Qc0"/>
+                            <constraint firstItem="4lM-LR-NfI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X3s-5j-2aU"/>
+                            <constraint firstItem="Hzb-KJ-Fqg" firstAttribute="top" secondItem="cQE-Ai-2MN" secondAttribute="bottom" constant="100" id="wEe-UO-PEJ"/>
+                            <constraint firstItem="4lM-LR-NfI" firstAttribute="top" secondItem="Hzb-KJ-Fqg" secondAttribute="bottom" constant="80" id="wQJ-56-nvC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="signInButton" destination="cQE-Ai-2MN" id="Nj3-t7-xjc"/>
+                        <outlet property="signOutBut" destination="Hzb-KJ-Fqg" id="lQt-A9-ycz"/>
+                        <outlet property="statusLabel" destination="4lM-LR-NfI" id="6oh-b6-abz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
